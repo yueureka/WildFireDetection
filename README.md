@@ -3,12 +3,12 @@ In this project, we created a U-net deep learning model that takes any satellite
 The model is trained on Databricks, and the application is deployed on Streamlit. <br/>
 
 ### Content of this document
-  * [Installation](### Installation)
-  * [Inspiration](### Inspiration)
-  * [What it does](### What it does)
-  * [How we built it](### How we built it)
-  * [Prediction examples](### Prediction examples)
-  * [Licensing](### Licensing)
+  - [Installation](#Installation )
+  * [Inspiration](#Inspiration)
+  * [What it does](#What it does)
+  * [How we built it](#How we built it)
+  * [Prediction examples](#Prediction examples)
+  * [Licensing](#Licensing)
   
 
 
