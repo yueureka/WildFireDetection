@@ -5,9 +5,9 @@ The model is trained on Databricks, and the application is deployed on Streamlit
 ### Content of this document
   * [Installation](#Installation)
   * [Inspiration](#Inspiration)
-  * [What it does](###What%20it%20does)
-  * [How we built it](###How%20we%20buil%20it)
-  * [Prediction examples](###Prediction%20examples)
+  * [What it does](###What-it-does)
+  * [How we built it](###How-we-buil-it)
+  * [Prediction examples](###Prediction-examples)
   * [Licensing](#Licensing)
 
 ### Installation 
@@ -31,14 +31,14 @@ Wildfire has become one of the most devastating disasters that not only causes h
 
 With the increasing development of deep learning technologies, convolutional neural network (CNN) has become one of the most powerful tool in image processing. In this work, we trained a U-net based CNN deep learning model on Databricks, it takes raw imagery from different satellites as the input, and is able to real-time detect the wildfire and monitor the burning scar. 
 
-### What it does
+### What-it-does
 1.	A simple to use application that takes imagery from different satellites resources as input, and then quickly predict the forest fire probability and segment the burning scar zones.
 
 2.	The application calculates the total area of the burnt area of a wildfire, and estimates the total CO2 emitted due to this fire. 
 
 
 
-### How we built it
+### How-we-built-it
 Here 's the workflow:
 ![Workflow](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Workflow.PNG)
 1.	Download the satellite imagery from Google image API, and prepare the training dataset.
@@ -46,7 +46,7 @@ Here 's the workflow:
 3.	Train the model on Databricks with CPU, and save the trained model on S3.
 4.	Deploy the application on stream.io, it calls model from S3 and satellite imagery, and make the prediction.
 
-### Prediction examples
+### Prediction-examples
 ![Result1](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result1.png)
 ![Result2](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result4.png)
 ![Result3](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result3.png)
