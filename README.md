@@ -5,9 +5,9 @@ The model is trained on Databricks, and the application is deployed on Streamlit
 ### Content of this document
   - [Installation](#Installation )
   * [Inspiration](#Inspiration)
-  * [What it does](#What it does)
-  * [How we built it](#How we built it)
-  * [Prediction examples](#Prediction examples)
+  * [What it does](#What)
+  * [How we built it](#How)
+  * [Prediction examples](#Prediction)
   * [Licensing](#Licensing)
   
 
@@ -17,7 +17,7 @@ Download the WildfireApp.zip and unzip the file to your local computer.<br/>
 Open your Python terminal, cd to the folder/app and then type the following code:<br/>
 `streamlit run app.py` <br/>
 
-If there's any dependencies requirements, please also download them ahead.
+If there are any dependencies requirements, please download them.
 
 #### Dependencies
 - matplotlib==3.2.1<br/>
