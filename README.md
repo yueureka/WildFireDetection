@@ -5,9 +5,9 @@ The model is trained on Databricks, and the application is deployed on Streamlit
 ### Content of this document
   * [Installation](#Installation)
   * [Inspiration](#Inspiration)
-  * [What it does](#What)
-  * [How we built it](#How)
-  * [Prediction examples](#Prediction)
+  * [What it does](#What%20it%20does)
+  * [How we built it](#How%20we%20buil%20it)
+  * [Prediction examples](#Prediction%20examples)
   * [Licensing](#Licensing)
 
 ### Installation 
