@@ -39,17 +39,18 @@ With the increasing development of deep learning technologies, convolutional neu
 
 
 ### How we built it
+Here 's the workflow:
 ![Workflow](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Workflow.PNG)
 1.	Download the satellite imagery from Google image API, and prepare the training dataset.
 2.	Build U-net model with Keras library and Tensorflow.
-3.	Train the model on Databricks with CPU.
-4.	Deploy the model on S3 and stream.io.
+3.	Train the model on Databricks with CPU, and save the trained model on S3.
+4.	Deploy the application on stream.io, it calls model from S3 and satellite imagery, and make the prediction.
 
 ### Prediction examples
 ![Result1](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result1.png)
-![Result2](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result2.png)
+![Result2](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result4.png)
 ![Result3](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result3.png)
 
 ### Licensing 
-DATA ACCESS AND USE: Creative Commons Attribution-NonCommercial-ShareAlike license.
+DATA ACCESS AND USE: Creative Commons Attribution-NonCommercial-ShareAlike license.<br/>
 Please send email to yueureka@gmail.com before using the code. 
