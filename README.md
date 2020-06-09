@@ -17,7 +17,7 @@ Open your Python terminal, cd to the folder/app and then type the following code
 
 If there are any dependencies requirements, please download them.
 
-#### Dependencies
+***Dependencies***
 - matplotlib==3.2.1<br/>
 - numpy==1.18.4<br/>
 - streamlit==0.59.0<br/>
