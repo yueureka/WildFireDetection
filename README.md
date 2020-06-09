@@ -3,14 +3,12 @@ In this project, we created a U-net deep learning model that takes any satellite
 The model is trained on Databricks, and the application is deployed on Streamlit. <br/>
 
 ### Content of this document
-  - [Installation](#Installation )
+  * [Installation](#Installation)
   * [Inspiration](#Inspiration)
   * [What it does](#What)
   * [How we built it](#How)
   * [Prediction examples](#Prediction)
   * [Licensing](#Licensing)
-  
-
 
 ### Installation 
 Download the WildfireApp.zip and unzip the file to your local computer.<br/>
