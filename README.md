@@ -27,29 +27,33 @@ If there are any dependencies requirements, please download them.
 - Pillow==7.1.2<br/>
 
 Here is what the application looks like:<br/>
-<img src="https://github.com/yueureka/WildFireDetection/blob/master/Pictures/App2.png" align="center" height="600" width="600">
+<p align="center">
+  <img width="600" height="600" src="https://github.com/yueureka/WildFireDetection/blob/master/Pictures/App2.png">
+</p>
 
 ### Inspiration 
 Wildfire has become one of the most devastating disasters that not only causes huge loss to human lives and properties, but also emits enormous CO2 into the environment. The 2018 California Camp fire alone has caused $16.5billion loss and emitted a year’s worth of power pollution. 
 
-Currently, there’re over a thousand of earth observation satellites that orbiting us, however, only less than 10 of them can monitor wildfire, such as Sentinel and Landsat. These satellites either only track small portion of the land, or require extensive specialties and dedicated preprocessing skills to process, which greatly limit the capability to real time monitor the wildfire across the globe. 
+Currently, there’re over a thousand of earth observation(EO) satellites that orbiting us, however, only less than 10 of them can monitor wildfire, such as Sentinel and Landsat. These satellites either only track small portion of the land, or require extensive specialties and dedicated preprocessing skills to process, which greatly limit the capability to real time monitor the wildfire across the globe. Therefore, it's important to find a way that may utilize all the EO satellite imagery and imporve the effectiveness of wildfire monitoring.
 
 With the increasing development of deep learning technologies, convolutional neural network (CNN) has become one of the most powerful tool in image processing. In this work, we trained a U-net based CNN deep learning model on Databricks, it takes raw imagery from different satellites as the input, and is able to quickly detect the wildfire and monitor the burning scar. 
 
 ### What-it-does
 We build a simple to use application that takes imagery from different satellites resources as input, and then quickly predict the forest fire probability and segment the burning scar zones. 
 
-With the input of image resolution and forest type, it also calculates the total area of the burnt area of a wildfire, and estimates the total CO2 emitted due to this fire. 
+In addition, with the input of image resolution and forest type, it calculates the total area of the burnt area of a wildfire, and estimates the total CO2 emitted due to this fire. 
 
 ### How-we-built-it
-Here 's the workflow:
+Here is the workflow:
 ![Workflow](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Workflow.PNG)
+The steps are:
 1.	Download the satellite imagery from Google image API, and then manually draw the burning scar segmentation on training dataset.
 2.	Build U-net model with Keras library and Tensorflow.
 3.	Train the model on Databricks with CPU, and save the trained model on S3.
 4.	Deploy the application on streamlit.
 
 ### Prediction-examples
+Here are few samples of the test images of our model. The figures from left to right are: 1. Raw image, 2. Burning scar masks manually added by hand, 3. Burning scar probabilitys predicted by the model, 4. Burning scar predicted by the model
 ![Result1](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result1.png)
 ![Result2](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result4.png)
 ![Result3](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result3.png)
