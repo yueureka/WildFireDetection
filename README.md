@@ -9,6 +9,7 @@ The model is trained on Databricks, and the application is deployed on Streamlit
   * [How-we-built-it](#How-we-built-it)
   * [Prediction-examples](#Prediction-examples)
   * [Licensing](#Licensing)
+  * [Contact](#Contact)
 
 ### Installation 
 Download the WildfireApp.zip and unzip the file to your local computer.<br/>
@@ -25,26 +26,28 @@ If there are any dependencies requirements, please download them.
 - Keras==2.0.0<br/>
 - Pillow==7.1.2<br/>
 
+Here is what the application looks like:<br/>
+![](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/App2.png | width=100)
 
 ### Inspiration 
-Wildfire has become one of the most devastating disasters that not only causes huge loss to human lives and properties, but also emits enormous CO2 into the environment. Governments and scientists have built dedicated earth observation satellites and system to monitor the wildfire, such as Sentinel and Landsat, however, these satellites either only track small portion of the land, or require extensive specialties and dedicated preprocessing skills to process, which greatly limit the capability to real time monitor the wildfire across the globe. 
+Wildfire has become one of the most devastating disasters that not only causes huge loss to human lives and properties, but also emits enormous CO2 into the environment. The 2018 California Camp fire alone has caused $16.5billion loss and emitted a year’s worth of power pollution. 
 
-With the increasing development of deep learning technologies, convolutional neural network (CNN) has become one of the most powerful tool in image processing. In this work, we trained a U-net based CNN deep learning model on Databricks, it takes raw imagery from different satellites as the input, and is able to real-time detect the wildfire and monitor the burning scar. 
+Currently, there’re over a thousand of earth observation satellites that orbiting us, however, only less than 10 of them can monitor wildfire, such as Sentinel and Landsat. These satellites either only track small portion of the land, or require extensive specialties and dedicated preprocessing skills to process, which greatly limit the capability to real time monitor the wildfire across the globe. 
+
+With the increasing development of deep learning technologies, convolutional neural network (CNN) has become one of the most powerful tool in image processing. In this work, we trained a U-net based CNN deep learning model on Databricks, it takes raw imagery from different satellites as the input, and is able to quickly detect the wildfire and monitor the burning scar. 
 
 ### What-it-does
-1.	A simple to use application that takes imagery from different satellites resources as input, and then quickly predict the forest fire probability and segment the burning scar zones.
+We build a simple to use application that takes imagery from different satellites resources as input, and then quickly predict the forest fire probability and segment the burning scar zones. 
 
-2.	The application calculates the total area of the burnt area of a wildfire, and estimates the total CO2 emitted due to this fire. 
-
-
+With the input of image resolution and forest type, it also calculates the total area of the burnt area of a wildfire, and estimates the total CO2 emitted due to this fire. 
 
 ### How-we-built-it
 Here 's the workflow:
 ![Workflow](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Workflow.PNG)
-1.	Download the satellite imagery from Google image API, and prepare the training dataset.
+1.	Download the satellite imagery from Google image API, and then manually draw the burning scar segmentation on training dataset.
 2.	Build U-net model with Keras library and Tensorflow.
 3.	Train the model on Databricks with CPU, and save the trained model on S3.
-4.	Deploy the application on stream.io, it calls model from S3 and satellite imagery, and make the prediction.
+4.	Deploy the application on streamlit.
 
 ### Prediction-examples
 ![Result1](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Result1.png)
@@ -53,4 +56,10 @@ Here 's the workflow:
 
 ### Licensing 
 DATA ACCESS AND USE: Creative Commons Attribution-NonCommercial-ShareAlike license.<br/>
-Please send email to yueureka@gmail.com before using the code. 
+Please send email to either of us before using the code. 
+
+### Contact
+Disha An (disha.an.datascience@gmail.com)<br/>
+Boran Han (boranhan.dl@gmail.com)<br/>
+Zhijuan Zhang (zzhijuan@yahoo.com )<br/>
+Yanxiang Yu (yueureka@gmail.com)<br/>
