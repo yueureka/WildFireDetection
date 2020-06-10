@@ -1,5 +1,5 @@
 # Wildfire Detection Project
-In this project, we created a U-net deep learning model that takes any satellite imagery to detect the wildfire and monitor the burning scar in real-time. <br/>
+In this project, we created a U-net deep learning model that takes any satellite imagery and detects the wildfire burning scar. <br/>
 The model is trained on Databricks, and the application is deployed on Streamlit. <br/>
 
 ### Content of this document
@@ -12,7 +12,7 @@ The model is trained on Databricks, and the application is deployed on Streamlit
   * [Contact](#Contact)
 
 ### Installation 
-Download the WildfireApp.zip and unzip the file to your local computer.<br/>
+Download zip of this project and unzip the file to your local computer.<br/>
 Open your Python terminal, cd to the folder/app and then type the following code:<br/>
 `streamlit run app.py` <br/>
 
@@ -31,15 +31,18 @@ Here is what the application looks like:<br/>
   <img width="600" height="600" src="https://github.com/yueureka/WildFireDetection/blob/master/Pictures/App2.png">
 </p>
 
+After deployed the model, click "browse file" button to add the image you want to predict (we have provided some test images in the 'Test image' folder for you to test), the app will then automatically draw the raw image, burning scar probability picutre and the predicted burning scar mask. You may also change the "type of forest" dropdown menu and "image resoltion" to check the burnt area and CO2 emission.  
+
+
 ### Inspiration 
 Wildfire has become one of the most devastating disasters that not only causes huge loss to human lives and properties, but also emits enormous CO2 into the environment. The 2018 California Camp fire alone has caused $16.5billion loss and emitted a year’s worth of power pollution. 
 
-Currently, there’re over a thousand of earth observation(EO) satellites that orbiting us, however, only less than 10 of them can monitor wildfire, such as Sentinel and Landsat. These satellites either only track small portion of the land, or require extensive specialties and dedicated preprocessing skills to process, which greatly limit the capability to real time monitor the wildfire across the globe. Therefore, it's important to find a way that may utilize all the EO satellite imagery and imporve the effectiveness of wildfire monitoring.
+Currently, there’re over a thousand of earth observation(EO) satellites that orbiting us, however, only less than 10 of them can monitor wildfire, such as Sentinel and Landsat. These satellites either only track small portion of the land, or require extensive specialties and dedicated preprocessing skills to process, which greatly limit the capability to real time monitor the wildfire across the globe. Therefore, it's important to find a way that may utilize many more of the EO satellite imagery and imporve the effectiveness of wildfire monitoring.
 
 With the increasing development of deep learning technologies, convolutional neural network (CNN) has become one of the most powerful tool in image processing. In this work, we trained a U-net based CNN deep learning model on Databricks, it takes raw imagery from different satellites as the input, and is able to quickly detect the wildfire and monitor the burning scar. 
 
 ### What-it-does
-We build a simple to use application that takes imagery from different satellites resources as input, and then quickly predict the forest fire probability and segment the burning scar zones. 
+The simple to use application takes imagery from different satellites resources as input, and then quickly predict the forest fire probability and segment the burning scar zones. 
 
 In addition, with the input of image resolution and forest type, it calculates the total area of the burnt area of a wildfire, and estimates the total CO2 emitted due to this fire. 
 
