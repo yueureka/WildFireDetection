@@ -27,7 +27,7 @@ If there are any dependencies requirements, please download them.
 - Pillow==7.1.2<br/>
 
 Here is what the application looks like:<br/>
-![](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/App2.png | width=100)
+<img src="https://github.com/yueureka/WildFireDetection/blob/master/Pictures/App2.png" align="center" height="600" width="600">
 
 ### Inspiration 
 Wildfire has become one of the most devastating disasters that not only causes huge loss to human lives and properties, but also emits enormous CO2 into the environment. The 2018 California Camp fire alone has caused $16.5billion loss and emitted a year’s worth of power pollution. 
