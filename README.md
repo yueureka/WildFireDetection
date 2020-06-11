@@ -59,11 +59,16 @@ In addition, with the input of image resolution and forest type, it calculates t
 Here is the workflow:
 ![Workflow](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Workflow.PNG)
 The steps are:
-1.	Download the satellite imagery from Google image API, and then manually draw the burning scar segmentation on training dataset.
-2.	Build U-net model with Keras library and Tensorflow.
-3.	Train the model on Databricks with CPU, and save the trained model on S3.
+1.	Download the satellite imagery using Google image API to create the training dataset.  
+2. Manually contour the burning scar zones as the label.
+3.	Build a training pipeline embedded with U-net model.
+4.	Train the model on Databricks with 2-instance CPU, and save the trained model to AWS S3.
+5.	Create the application using Streamlit framework, and deploy it as a Docker project.
 ![](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Databricks.PNG)
-4.	Deploy the application on streamlit.
+
+The CO2 emission calculation is based on the following references:
+* https://ww3.arb.ca.gov/cc/inventory/pubs/reports/2000_2016/ghg_inventory_trends_00-16.pdf
+* https://www.geosci-model-dev.net/4/625/2011/gmd-4-625-2011.pdf
 
 ### Prediction-examples
 Here are few samples of the test images of our model. The figures from left to right are: 1. Raw image, 2. Burning scar masks manually added by hand, 3. Burning scar probabilitys predicted by the model, 4. Burning scar predicted by the model
