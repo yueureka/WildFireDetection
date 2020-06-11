@@ -67,8 +67,8 @@ The steps are:
 ![](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Databricks.PNG)
 
 The CO2 emission calculation is based on the following references:
-* [California Greenhouse Gas Emission for 2000 to 2017 Trends of Emissions and Other Indicators, 2019]https://ww3.arb.ca.gov/cc/inventory/pubs/reports/2000_2016/ghg_inventory_trends_00-16.pdf
-* [The Fire INventory from NCAR (FINN): a high resolution global model to estimate the emissions from open burning, 2011]https://www.geosci-model-dev.net/4/625/2011/gmd-4-625-2011.pdf
+* [California Greenhouse Gas Emission for 2000 to 2017 Trends of Emissions and Other Indicators, 2019](https://ww3.arb.ca.gov/cc/inventory/pubs/reports/2000_2016/ghg_inventory_trends_00-16.pdf)
+* [The Fire INventory from NCAR (FINN): a high resolution global model to estimate the emissions from open burning, 2011](https://www.geosci-model-dev.net/4/625/2011/gmd-4-625-2011.pdf)
 
 ### Prediction-examples
 Here are few samples of the test images of our model. The figures from left to right are: 1. Raw image, 2. Burning scar masks manually added by hand, 3. Burning scar probabilitys predicted by the model, 4. Burning scar predicted by the model
