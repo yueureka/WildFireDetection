@@ -14,7 +14,19 @@ Check here for the [Video Demonstration](https://www.youtube.com/watch?v=gkRaKKU
   * [Contact](#Contact)
 
 ### Installation 
-Clone this repo and direct to the `./app` folder <br/>
+Clone this repo and direct to the `./app` folder. <br/>
+- Method1: Directly run with Python IDE<br/>
+Go to the folder`/app` and then in your terminal please type the following code: <br/>
+`streamlit run app.py` <br/>
+***Dependency :***<br/>
+matplotlib==3.2.1<br/>
+numpy==1.18.4<br/>
+streamlit==0.59.0<br/>
+tensorflow==1.15.2<br/>
+Keras==2.0.0<br/>
+Pillow==7.1.2<br/>
+
+- Method2: Run with Docker<br/>
 You probably need to download docker before you start running the app. <br/>
 Then under the folder `./app` in terminal, please add this command `docker build -f Dockerfile -t app:latest .` This is going to create the docker image and build the corresponding docker container. <br/>
 For your better usage, the trained model has been stored in the docker container. <br/>
