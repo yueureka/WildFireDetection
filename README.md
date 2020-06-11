@@ -2,7 +2,7 @@
 In this project, we created a U-net deep learning model that takes any satellite imagery and detects the wildfire burning scar. <br/>
 The model is trained on Databricks, and the application is deployed on Streamlit. <br/>
 
-Check here for the [**Video Demonstration**](https://www.youtube.com/watch?v=gkRaKKU9-Es) and the [**Presentation**](https://github.com/yueureka/WildFireDetection/blob/master/Presentation.pdf)
+Check here for the [**Video Demonstration**](https://www.youtube.com/watch?v=gkRaKKU9-Es) and the [**Presentation**](https://github.com/yueureka/WildFireDetection/blob/master/Presentation.pdf).
 
 ### Content of this document
   * [Installation](#Installation)
