@@ -62,6 +62,7 @@ The steps are:
 1.	Download the satellite imagery from Google image API, and then manually draw the burning scar segmentation on training dataset.
 2.	Build U-net model with Keras library and Tensorflow.
 3.	Train the model on Databricks with CPU, and save the trained model on S3.
+![](https://github.com/yueureka/WildFireDetection/blob/master/Pictures/Databricks.PNG)
 4.	Deploy the application on streamlit.
 
 ### Prediction-examples
