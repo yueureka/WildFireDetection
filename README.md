@@ -1,6 +1,7 @@
 # Wildfire Detection Project
 In this project, we created a U-net deep learning model that takes any satellite imagery and detects the wildfire burning scar. <br/>
 The model is trained on Databricks, and the application is deployed on Streamlit. <br/>
+
 Check here for the [Video Demonstration](https://www.youtube.com/watch?v=gkRaKKU9-Es).
 
 ### Content of this document
@@ -21,13 +22,6 @@ Then please use the code `docker run -p 8501:8501 app:latest`, this is going to 
 Use your favourite browser, and type `http://localhost:8501/` and you should be able to open our app. <br/>
 After you done with the app, please remember to stop the container. <br/>
 
-***Dependencies***
-- matplotlib==3.2.1<br/>
-- numpy==1.18.4<br/>
-- streamlit==0.59.0<br/>
-- tensorflow==1.14.0<br/>
-- Keras==2.0.0<br/>
-- Pillow==7.1.2<br/>
 
 Here is what the application looks like:<br/>
 <p align="center">
