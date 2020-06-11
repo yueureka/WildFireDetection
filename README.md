@@ -15,12 +15,12 @@ Check here for the [**Video Demonstration**](https://www.youtube.com/watch?v=gkR
 
 ### Installation 
 Clone this repo and direct to the `./app` folder. <br/>
-- Method 1: Run with Python IDE<br/>
+- **Method 1:** Run with Python IDE<br/>
 Go to the folder`/app` and then in your terminal please type the following code: <br/>
 `streamlit run app.py` <br/>
 Please make sure you have the dependency installed same as listed in the "requirement.txt"
 
-- Method 2: Run with Docker<br/>
+- **Method 2:** Run with Docker<br/>
 You probably need to download docker before you start running the app. <br/>
 Then under the folder `./app` in terminal, please add this command `docker build -f Dockerfile -t app:latest .` This is going to create the docker image and build the corresponding docker container. <br/>
 For your better usage, the trained model has been stored in the docker container. <br/>
