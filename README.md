@@ -22,7 +22,7 @@ Please make sure you have the dependency installed same as listed in the "requir
 
 - **Method 2:** Run with Docker<br/>
 You probably need to download docker before you start running the app. <br/>
-Then under the folder `./app` in terminal, please add this command `docker build -f Dockerfile -t app:latest .` This is going to create the docker image and build the corresponding docker container. <br/>
+Then under the folder `./app` in terminal, please add this command `docker build -f Dockerfile -t app:latest .`. This is going to create the docker image and build the corresponding docker container. <br/>
 For your better usage, the trained model has been stored in the docker container. <br/>
 Then please use the code `docker run -p 8501:8501 app:latest`, this is going to open the app for you. <br/>
 Use your favourite browser, and type `http://localhost:8501/` and you should be able to open our app. <br/>
