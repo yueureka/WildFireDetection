@@ -34,7 +34,7 @@ Here is what the application looks like:<br/>
   <img width="600" height="600" src="https://github.com/yueureka/WildFireDetection/blob/master/Pictures/App2.png">
 </p>
 
-After deployed the model, click "browse file" button to add the image you want to predict (we have provided some test images in the 'Test image' folder for you to test), the app will then automatically draw the raw image, burning scar probability picutre and the predicted burning scar mask. You may also change the "type of forest" dropdown menu and "image resoltion" to check the burnt area and CO2 emission.  
+After deployed the model, click "browse file" button to add the image you want to predict (we have provided some test images in the 'test_image' folder for you to test), the image needs to be in "*.PNG" format, the app will then automatically draw the raw image, burning scar probability picutre and the predicted burning scar mask. You may also change the "type of forest" dropdown menu and "image resoltion" to check the burnt area and CO2 emission.  
 
 
 ### Inspiration 
