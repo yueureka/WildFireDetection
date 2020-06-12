@@ -46,9 +46,9 @@ Currently, there’re over a thousand of earth observation(EO) satellites that o
 With the increasing development of deep learning technologies, convolutional neural network (CNN) has become one of the most powerful tool in image processing. In this work, we trained a U-net based CNN deep learning model on Databricks, it takes raw imagery from different satellites as the input, and is able to quickly detect the wildfire and monitor the burning scar. 
 
 ### What-it-does
-The simple to use application takes imagery from different satellites resources as input, and then quickly predict the forest fire probability and segment the burning scar zones. 
+This is a user-friendly application. It takes imagery from different satellites resources as input, and then quickly predicts the forest fire probability and segments the burning scar zones.
 
-In addition, with the input of image resolution and forest type, it calculates the total area of the burnt area of a wildfire, and estimates the total CO2 emitted due to this fire. 
+In addition, given the image resolution and the forest type, it can calculate the total area of the burnt zone of a wildfire, and estimate the total CO2 emission from this fire.
 
 ### How-we-built-it
 Here is the workflow:
