@@ -1,7 +1,7 @@
 
 import numpy as np
 from tensorflow.keras.models import load_model
-from keras import backend as K
+from tensorflow.compat.v1.keras import backend as K
 from PIL import Image
 
 def add_image_magin(input_image, im_width=720, im_height=480, color=0):
