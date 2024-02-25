@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from source import preprocess_input_image, batch_predict, conv_float_int, combine_image, load_trained_model, burn_area   
 import numpy as np
-from keras import backend as K
+from tensorflow.compat.v1.keras import backend as K
 from tensorflow.python.lib.io import file_io
 import boto3
 from keras.models import load_model
